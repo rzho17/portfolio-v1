@@ -6,9 +6,21 @@ export default function LandingPage() {
   return (
     <>
       <section className={styles.landingPage}>
-        <div className={styles.landingBlur}>
+        <header className={styles.landingBlur}>
+          {/* <img
+            src="../public/assets/darkBackground.jpg"
+            alt=""
+            className={styles.background}
+          />
+          <img
+            src="../public/assets/foreground.png"
+            alt=""
+            className={styles.foreground}
+          /> */}
           <div className={styles.titleContainer}>
+            <p className={styles.descriptor}>Front End</p>
             <div className={styles.headingContainer}>
+              <p>Reggie Z</p>
               <h1>HELLO WORLD</h1>
               <div className={styles.headingButtons}>
                 <Button text={"HOME"} />
@@ -17,7 +29,7 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-        </div>
+        </header>
         <DarkMode />
       </section>
     </>
