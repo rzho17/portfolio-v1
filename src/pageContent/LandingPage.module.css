@@ -8,7 +8,8 @@
   padding: clamp(1.5rem, 3vw, 4rem);
   background-color: rgb(207, 212, 212);
 
-  background-image: url("../public/assets/darkBackground.jpg");
+  /* background-image: url("../public/assets/darkBackground.jpg"); */
+  background-image: var(--landingBg);
 
   height: 100vh;
 
@@ -27,11 +28,12 @@
   justify-content: center;
   align-items: center;
 
-  border: 1px solid;
+  /* border: 1px solid; */
   border-radius: 20px;
 
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
+  background-color: rgba(45, 71, 48, 0.21);
 }
 
 .titleContainer {
@@ -42,13 +44,17 @@
 }
 
 .descriptor {
+  color: #618b35;
+  margin-top: 1rem;
+  font-size: clamp(1rem, 1.5vw, 2vw);
+  letter-spacing: 0.25rem;
   writing-mode: vertical-lr;
 }
 
 h1 {
   /* font-size: 3rem; */
   font-size: clamp(2.5rem, 2vw, 4rem);
-  color: var(--bodyBackground);
+  color: #fffdf6;
 }
 
 .headingButtons {

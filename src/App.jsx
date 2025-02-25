@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import "./App.css";
 import LandingPage from "./pageContent/LandingPage";
+import Main from "./pageContent/Main";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <LandingPage />
+      <Main />
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam eos
         nostrum fugit iste facilis, distinctio eum ipsum molestias accusantium

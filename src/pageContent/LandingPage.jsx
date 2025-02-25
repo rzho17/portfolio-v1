@@ -7,6 +7,7 @@ export default function LandingPage() {
     <>
       <section className={styles.landingPage}>
         <header className={styles.landingBlur}>
+          <DarkMode />
           {/* <img
             src="../public/assets/darkBackground.jpg"
             alt=""
@@ -18,7 +19,7 @@ export default function LandingPage() {
             className={styles.foreground}
           /> */}
           <div className={styles.titleContainer}>
-            <p className={styles.descriptor}>Front End</p>
+            <p className={styles.descriptor}>FRONT END</p>
             <div className={styles.headingContainer}>
               <p>Reggie Z</p>
               <h1>HELLO WORLD</h1>
@@ -30,7 +31,6 @@ export default function LandingPage() {
             </div>
           </div>
         </header>
-        <DarkMode />
       </section>
     </>
   );

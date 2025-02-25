@@ -1,0 +1,27 @@
+.aboutSection {
+  min-height: 100vh;
+  padding: clamp(1.5rem, 3vw, 4rem);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  height: 100%;
+
+  background-color: rgba(45, 71, 48, 0.21);
+  border-radius: 20px;
+}
+
+.info {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.about img {
+  /* width: 100%; */
+
+  background-color: red;
+  object-fit: cover;
+
+  border-radius: 0px 0px 20px 20px;
+}
