@@ -6,20 +6,108 @@
 .about {
   display: flex;
   flex-direction: column;
-  border: 1px solid;
   height: 100%;
 
-  background-color: rgba(45, 71, 48, 0.21);
+  background-color: rgba(31, 61, 59, 0.11);
   border-radius: 20px;
 }
 
 .info {
-  padding: 1rem 1rem 0 1rem;
+  /* padding: 1rem 1rem 0 1rem; */
+  padding: 1rem;
 }
 
+.infoAbout,
+.infoSkills {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.infoAbout h2,
+.infoAbout h3,
+.infoAbout p,
+.infoSkills h2,
+.infoSkills h3,
+.infoSkills p {
+  color: var(--primaryColor);
+  margin: 1rem 0;
+}
+.infoAbout h3,
+.infoSkills h3 {
+  font-size: clamp(1rem, 1.5vw, 2vw);
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  writing-mode: vertical-lr;
+  /* margin-top: 1rem; */
+
+  background-image: var(--gradient);
+  color: transparent;
+  background-clip: text;
+
+  opacity: 0.2;
+}
+
+.infoAbout h2,
+.infoSkills h2 {
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1.25rem;
+}
+
+.infoAbout p {
+  font-weight: 100;
+  line-height: 1.1rem;
+  font-size: clamp(0.75rem, 1.5vw, 2rem);
+}
+
+/* .infoLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 0 2rem 0;
+}
+
+.infoIcon {
+  flex: 1;
+  width: 100%;
+  height: 2rem;
+} */
+
+/* .infoAbout a {
+  display: flex;
+  color: var(--primaryColor);
+  text-decoration: none;
+} */
+
+.infoSkills h3 {
+  /* margin-top: 3rem; */
+}
+.infoSkills .skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 0;
+}
+
+.skills svg {
+  width: 100%;
+  height: 2rem;
+}
+
+.skills li {
+  color: var(--primaryColor);
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: clamp(0.75rem, 1.5vw, 2rem);
+}
 .about img {
   /* width: 100%; */
 
+  height: 100px;
   background-color: red;
   object-fit: cover;
 

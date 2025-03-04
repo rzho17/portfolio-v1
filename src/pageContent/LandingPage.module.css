@@ -33,7 +33,7 @@
 
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-  background-color: rgba(45, 71, 48, 0.21);
+  background-color: var(--blurColor);
 }
 
 .titleContainer {
@@ -44,7 +44,7 @@
 }
 
 .descriptor {
-  color: #618b35;
+  color: var(--descriptor);
   margin-top: 1rem;
   font-size: clamp(1rem, 1.5vw, 2vw);
   letter-spacing: 0.25rem;
@@ -75,12 +75,13 @@ h1 {
   background-color: transparent;
 }
 
-.headingButtons button:last-of-type {
+.headingButtons a:nth-of-type(3) button {
   padding: clamp(0.25rem, 1vw, 0.5rem) clamp(0.6rem, 2vw, 1rem);
-  background: linear-gradient(
+  background: var(--projectHighlight);
+  /* background: linear-gradient(
     270deg,
     rgba(15, 55, 20, 1) 0%,
     rgba(0, 0, 0, 1) 100%
-  );
-  border: 1px solid #0f3714;
+  ); */
+  border: 1px solid #222626;
 }

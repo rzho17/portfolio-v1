@@ -5,16 +5,35 @@
   --landingBg: url("../public/assets/lightBackground.jpg");
   --mode: url("../public/assets/sun.svg");
   --switch: invert(99%) sepia(5%) saturate(400%) hue-rotate(10deg);
+  --gradient: linear-gradient(#0f3714, #689a6e);
+  --blurColor: rgba(45, 71, 48, 0.21);
+  --descriptor: #618b35;
+  --projectHighlight: linear-gradient(
+    270deg,
+    rgba(15, 55, 20, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 [data-theme="dark"] {
-  --bodyBackground: #0f3714;
+  --bodyBackground: #222626;
+  --primaryColor: #f9f7ef;
+  --secondaryColor: #222626;
+  /* --bodyBackground: #0f3714;
   --primaryColor: #fffdf6;
-  --secondaryColor: #0f3714;
+  --secondaryColor: #0f3714; */
   --landingBg: url("../public/assets/darkBackground.jpg");
   --mode: url("../public/assets/moon.svg");
-  --switch: invert(13%) sepia(47%) saturate(586%) hue-rotate(94deg)
+  --switch: invert(13%) sepia(7%) saturate(186%) hue-rotate(94deg)
     brightness(94%) contrast(106%);
+  --gradient: linear-gradient(var(--primaryColor), #1f3d3b);
+  --blurColor: rgba(31, 37, 61, 0.11);
+  --descriptor: #317c8f;
+  --projectHighlight: linear-gradient(
+    270deg,
+    rgb(27, 87, 102) 0%,
+    rgba(34, 38, 38, 1) 100%
+  );
 }
 
 * {
@@ -25,7 +44,9 @@
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   min-height: 100vh;
 }

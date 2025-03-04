@@ -5,7 +5,7 @@ import styles from "./LandingPage.module.css";
 export default function LandingPage() {
   return (
     <>
-      <section className={styles.landingPage}>
+      <section className={styles.landingPage} id="home">
         <header className={styles.landingBlur}>
           <DarkMode />
           {/* <img
@@ -24,9 +24,15 @@ export default function LandingPage() {
               <p>Reggie Z</p>
               <h1>HELLO WORLD</h1>
               <div className={styles.headingButtons}>
-                <Button text={"HOME"} />
-                <Button text={"ABOUT"} />
-                <Button text={"PROJECTS"} />
+                <a href="#home">
+                  <Button text={"HOME"} />
+                </a>
+                <a href="#about">
+                  <Button text={"ABOUT"} />
+                </a>
+                <a href="#projects">
+                  <Button text={"PROJECTS"} />
+                </a>
               </div>
             </div>
           </div>
