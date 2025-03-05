@@ -5,6 +5,7 @@ import { FaCss3Alt } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
 
 import ContactInfo from "../components/ContactInfo";
 export default function About() {
@@ -67,7 +68,10 @@ export default function About() {
                   <FaFigma />
                   Figma
                 </li>
-                <div>a</div>
+                <li>
+                  <FaGitAlt />
+                  Git
+                </li>
               </ul>
             </div>
           </div>
