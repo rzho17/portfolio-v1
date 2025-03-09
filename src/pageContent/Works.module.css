@@ -28,7 +28,9 @@
 }
 
 .projectOne video,
-.projectTwo video {
+.projectTwo video,
+.projectThree video,
+.projectFour video {
   object-fit: cover;
   width: 100%;
   border-radius: 20px;

@@ -30,11 +30,12 @@
 }
 
 .contactContainer a {
-  /* color: #317c8f; */
-  /* opacity: 0.5; */
+  color: var(--offColor);
+  opacity: 0.5;
+  width: 1.5rem;
 }
 
-.contactForm {
+/* .contactForm {
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -47,7 +48,6 @@
   color: var(--primaryColor);
   border-radius: 5px;
   padding: 1rem 0 1.5rem 0.5rem;
-  /* padding-left: 0.5rem; */
   background-color: transparent;
 }
 
@@ -57,7 +57,8 @@
   color: var(--secondaryColor);
   background-color: var(--primaryColor);
   border-radius: 10px;
-}
+  margin-top: 1rem;
+} */
 
 .footerBar {
   display: flex;

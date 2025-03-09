@@ -10,13 +10,26 @@ export default function Works() {
         <div className={styles.projectsWrapper}>
           <div className={styles.projectOne}>
             <video
-              src="../public/assets/mobile short.mp4"
+              // src="../public/assets/.mp4"
               autoPlay
               muted
               loop
             ></video>
           </div>
           <div className={styles.projectTwo}>
+            <video src="../public/assets/pomo.mp4" autoPlay muted loop></video>
+          </div>
+        </div>
+        <div className={styles.projectsWrapper2}>
+          <div className={styles.projectThree}>
+            <video
+              src="../public/assets/battle.mp4"
+              autoPlay
+              muted
+              loop
+            ></video>
+          </div>
+          <div className={styles.projectFour}>
             <video
               src="../public/assets/twelfth.mp4"
               autoPlay
@@ -24,10 +37,6 @@ export default function Works() {
               loop
             ></video>
           </div>
-        </div>
-        <div className={styles.projectsWrapper2}>
-          <div className={styles.projectThree}></div>
-          <div className={styles.projectFour}></div>
         </div>
       </div>
     </section>

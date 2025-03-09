@@ -1,5 +1,6 @@
 import styles from "./FooterPage.module.css";
 import ContactInfo from "../components/ContactInfo";
+import { ContactMe } from "../components/ContactMe";
 
 export default function FooterPage() {
   return (
@@ -20,11 +21,13 @@ export default function FooterPage() {
             <ContactInfo />
           </div>
         </div>
-        <form action="" className={styles.contactForm}>
+        <ContactMe />
+        {/* <form action="" className={`${styles.contactForm} `}>
           <label htmlFor="name"></label>
           <input
             type="text"
             id="name"
+            name="name"
             className={styles.contactName}
             placeholder="Your Name"
           />
@@ -32,17 +35,19 @@ export default function FooterPage() {
           <input
             type="email"
             id="email"
+            name="email"
             placeholder="Email"
             className={styles.contactEmail}
           />
           <label htmlFor="message"></label>
           <textarea
             id="message"
+            name="message"
             placeholder="Say Hi Here!"
             className={styles.contactMessage}
           ></textarea>
           <input type="submit" value="Connect" />
-        </form>
+        </form> */}
       </section>
       <div className={styles.footerBar}>Designed by</div>
     </footer>

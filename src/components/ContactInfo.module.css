@@ -1,7 +1,8 @@
 .infoLinks {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
+  gap: 1rem;
   margin: 0 0 2rem 0;
 }
 
