@@ -1,4 +1,5 @@
 import styles from "./Works.module.css";
+import Overlay from "../components/Overlay";
 
 export default function Works() {
   return (
@@ -15,9 +16,11 @@ export default function Works() {
               muted
               loop
             ></video>
+            <Overlay />
           </div>
           <div className={styles.projectTwo}>
             <video src="../public/assets/pomo.mp4" autoPlay muted loop></video>
+            {/* <Overlay /> */}
           </div>
         </div>
         <div className={styles.projectsWrapper2}>

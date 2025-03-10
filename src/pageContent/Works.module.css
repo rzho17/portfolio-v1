@@ -22,8 +22,9 @@
 .projectTwo,
 .projectThree,
 .projectFour {
+  position: relative;
   background-color: var(--primaryColor);
-  height: 200px;
+  height: 350px;
   border-radius: 20px;
 }
 
@@ -33,12 +34,12 @@
 .projectFour video {
   object-fit: cover;
   width: 100%;
-  border-radius: 20px;
   height: 100%;
+  border-radius: 20px;
 }
 
 .projectOne video:hover {
-  height: 101%;
+  /* height: 101%; */
 }
 .projectTwo {
   margin-bottom: 1rem;
