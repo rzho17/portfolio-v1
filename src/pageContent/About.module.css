@@ -3,13 +3,34 @@
   padding: clamp(1.5rem, 3vw, 4rem);
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+@media (prefers-reduced-motion: no-preference) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
-  background-color: rgba(31, 61, 59, 0.11);
-  border-radius: 20px;
+    background-color: rgba(31, 61, 59, 0.11);
+    border-radius: 20px;
+
+    /* animation scroll */
+    /* scale: 0.8; */
+    opacity: 0;
+    /* transform: translate(-50px); */
+    left: 50px;
+
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+  }
+
+  @keyframes fade-in {
+    to {
+      /* scale: 1; */
+      opacity: 1;
+      left: 0;
+      /* transform: translate(0); */
+    }
+  }
 }
 
 .info {

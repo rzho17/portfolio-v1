@@ -1,19 +1,31 @@
-.infoLinks {
+.infoLinks ul {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   gap: 1rem;
   margin: 0 0 2rem 0;
+  list-style: none;
+  padding: 0;
+  font-size: 0.75rem;
+  color: var(--primaryColor);
+  font-weight: 100;
 }
 
 .infoIcon {
   flex: 1;
   width: 100%;
-  height: 2rem;
+  height: 1.5rem;
+}
+.infoLinks li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .infoLinks a {
   display: flex;
   color: var(--primaryColor);
   text-decoration: none;
+  margin-bottom: 0.25rem;
 }

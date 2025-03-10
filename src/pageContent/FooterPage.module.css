@@ -35,6 +35,10 @@
   width: 1.5rem;
 }
 
+.contactContainer li {
+  color: var(--offColor);
+}
+
 /* .contactForm {
   margin: 1rem;
   display: flex;
