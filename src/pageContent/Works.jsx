@@ -1,7 +1,15 @@
 import styles from "./Works.module.css";
 import Overlay from "../components/Overlay";
+import { useState } from "react";
 
 export default function Works() {
+  const skills = ["HTML", "CSS", "JS", "REACT"];
+
+  const [active, setActive] = useState(false);
+
+  const changeOverlay = () => {
+    setActive((value) => !value);
+  };
   return (
     <section className={styles.worksSection} id="projects">
       <div className={styles.projectContainer}>
@@ -9,14 +17,34 @@ export default function Works() {
         <p>click a project to see more!</p>
 
         <div className={styles.projectsWrapper}>
-          <div className={styles.projectOne}>
+          <div
+            className={styles.projectOne}
+            onMouseEnter={changeOverlay}
+            onMouseLeave={changeOverlay}
+          >
             <video
               // src="../public/assets/.mp4"
               autoPlay
               muted
               loop
             ></video>
-            <Overlay />
+            <Overlay
+              title={"Test Project"}
+              description={
+                "This is a tester paragraph for my overlay! I hope this looks good!"
+              }
+              tools={skills}
+              close={changeOverlay}
+            />
+            {/* {active ? (
+              <Overlay
+                title={"Test Project"}
+                description={
+                  "This is a tester paragraph for my overlay! I hope this looks good!"
+                }
+                tools={skills}
+              />
+            ) : null} */}
           </div>
           <div className={styles.projectTwo}>
             <video src="../public/assets/pomo.mp4" autoPlay muted loop></video>

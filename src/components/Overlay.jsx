@@ -1,21 +1,40 @@
 import styles from "./Overlay.module.css";
+import { nanoid } from "nanoid";
+import { useEffect, useState } from "react";
+import { IoMdClose } from "react-icons/io";
 
-export default function Overlay({ title, description, icons, siteUrl }) {
+export default function Overlay({
+  title,
+  description,
+  tools,
+  codeUrl,
+  siteUrl,
+  close,
+}) {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleWidth = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWidth);
+    return () => window.removeEventListener("resize", handleWidth);
+  }, []);
+
   return (
     <>
       <div className={styles.overlayBg}>
         <div className={styles.overlay}>
-          <h4>Project Title</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            recusandae porro consequuntur eum repudiandae. Aliquam.
-          </p>
+          {width <= 768 ? (
+            <button className={styles.close} onClick={close}>
+              <IoMdClose />
+            </button>
+          ) : null}
+          <h4>{title}</h4>
+          <p>{description}</p>
 
-          <div>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JS</span>
-            <span>REACT</span>
+          <div className={styles.overlaySkills}>
+            {tools.map((skill) => {
+              return <span key={nanoid()}>{skill}</span>;
+            })}
           </div>
 
           <div className={styles.overlayBtns}>
