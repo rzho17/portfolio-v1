@@ -55,7 +55,8 @@
 }
 .infoAbout h3,
 .infoSkills h3 {
-  font-size: clamp(1rem, 1.5vw, 2vw);
+  /* font-size: clamp(1rem, 1.5vw, 2vw); */
+  font-size: clamp(1rem, 2rem, 2vw);
   font-weight: 300;
   letter-spacing: 0.5rem;
   writing-mode: vertical-lr;
@@ -73,6 +74,8 @@
   font-weight: 900;
   letter-spacing: -1px;
   line-height: 1.25rem;
+
+  font-size: 1.5rem;
 }
 
 .infoAbout p {
@@ -114,7 +117,7 @@
 
 .skills svg {
   width: 100%;
-  height: 2rem;
+  height: 1.5rem;
 }
 
 .skills {
@@ -138,4 +141,51 @@
   object-fit: cover;
 
   border-radius: 0px 0px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutSection {
+    display: flex;
+    justify-content: center;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* flex-direction: row-reverse; */
+    /* justify-content: space-between; */
+
+    width: 750px;
+  }
+
+  .about img {
+    width: 200px;
+    height: 750px;
+    border-radius: 0;
+    border-radius: 20px 0 0 20px;
+    order: -1;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-self: center;
+  }
+  .infoAbout,
+  .infoSkills {
+    /* gap: 1.5rem; */
+  }
+  .infoAbout p {
+    max-width: 300px;
+  }
+  .infoAbout h2,
+  .infoSkills h2 {
+    line-height: 2rem;
+    max-width: 300px;
+    font-size: clamp(1rem, 2rem, 3rem);
+    /* padding: 2rem; */
+    /* margin-right: 8rem; */
+  }
+}
+@media screen and (min-width: 1024px) {
 }
