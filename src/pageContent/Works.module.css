@@ -60,6 +60,10 @@
     transform: translate(-1rem);
   }
 
+  .projectTwo video {
+    object-position: 53%;
+  }
+
   .projectTwo,
   .projectFour {
     transform: translate(1rem);
@@ -70,5 +74,42 @@
       opacity: 1;
       transform: translate(0);
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .worksSection {
+  }
+  .projectContainer {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .projectsWrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    transform: translate(-3rem);
+  }
+
+  .projectsWrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    transform: translate(3rem);
+  }
+
+  .projectsWrapper,
+  .projectsWrapper2 {
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+  }
+
+  .projectOne,
+  .projectThree,
+  .projectTwo,
+  .projectFour {
+    transform: translate(0);
+    opacity: 1;
+    animation: none;
   }
 }
