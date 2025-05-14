@@ -38,10 +38,10 @@ export default function Overlay({
           </div>
 
           <div className={styles.overlayBtns}>
-            <a href="">
+            <a href={codeUrl}>
               <button className={styles.btn}>Code</button>
             </a>
-            <a href="">
+            <a href={siteUrl}>
               <button className={styles.btn}>Live</button>
             </a>
           </div>
