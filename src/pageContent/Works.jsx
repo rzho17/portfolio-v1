@@ -49,14 +49,6 @@ export default function Works() {
           <div className={styles.projectTwo}>
             <video src="../public/assets/pomo.mp4" autoPlay muted loop></video>
             {/* <Overlay /> */}
-            <Overlay
-              title={"Test Project"}
-              description={
-                "This is a tester paragraph for my overlay! I hope this looks good!"
-              }
-              tools={skills}
-              close={changeOverlay}
-            />
           </div>
         </div>
         <div className={styles.projectsWrapper2}>

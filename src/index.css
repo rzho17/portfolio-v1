@@ -25,8 +25,8 @@
   --secondaryColor: #0f3714; */
   --landingBg: url("../public/assets/darkBackground.jpg");
   --mode: url("../public/assets/moon.svg");
-  --switch: invert(13%) sepia(7%) saturate(186%) hue-rotate(94deg)
-    brightness(94%) contrast(106%);
+  /* --switch: invert(13%) sepia(7%) saturate(186%) hue-rotate(94deg)
+    brightness(94%) contrast(106%); */
   --gradient: linear-gradient(var(--primaryColor), #1f3d3b);
   --blurColor: rgba(31, 37, 61, 0.11);
   --descriptor: #317c8f;
