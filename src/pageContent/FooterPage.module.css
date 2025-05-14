@@ -75,3 +75,26 @@
 ::placeholder {
   color: var(--primaryColor);
 }
+
+@media screen and (min-width: 768px) {
+  .footerSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
+  .contactContainer {
+    margin: 1rem;
+    margin-left: 0;
+  }
+  .contactContainer div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+}
