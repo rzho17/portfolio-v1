@@ -47,6 +47,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  max-width: 450px;
 }
 
 .headingContainer p {
@@ -69,8 +70,19 @@
 
 h1 {
   /* font-size: 3rem; */
-  font-size: clamp(2.5rem, 4rem, 5vw);
+  font-size: clamp(2.5rem, 4rem, 3vw);
   color: #fffdf6;
+
+  /* min-width: 280px; */
+  /* min-width: 400px; */
+}
+
+h1 .cursor {
+  color: #fffdf6;
+}
+
+h1 span:nth-of-type(1) {
+  max-width: 100%;
 }
 
 .headingButtons {

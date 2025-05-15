@@ -1,8 +1,13 @@
 import DarkMode from "../components/DarkMode";
 import Button from "../components/Button";
 import styles from "./LandingPage.module.css";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 export default function LandingPage() {
+  const [text] = useTypewriter({
+    words: ["Developer", "Designer"],
+    loop: 0,
+  });
   return (
     <>
       <section className={styles.landingPage} id="home">
@@ -22,7 +27,13 @@ export default function LandingPage() {
             <p className={styles.descriptor}>FRONT END</p>
             <div className={styles.headingContainer}>
               <p>Reggie Z</p>
-              <h1>HELLO WORLD</h1>
+              <h1>
+                Web
+                <span> {text}</span>
+                <span className={styles.cursor}>
+                  <Cursor />
+                </span>
+              </h1>
               <div className={styles.headingButtons}>
                 <a href="#home">
                   <Button text={"HOME"} />

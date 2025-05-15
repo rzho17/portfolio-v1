@@ -34,6 +34,10 @@
   animation: fadeinout 3s linear forwards;
 }
 
+.contactForm input[type="submit"] {
+  cursor: pointer;
+}
+
 @keyframes fadeinout {
   0%,
   100% {
