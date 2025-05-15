@@ -10,8 +10,8 @@
   --descriptor: #618b35;
   --projectHighlight: linear-gradient(
     270deg,
-    rgba(15, 55, 20, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
+    rgb(32, 125, 44) 0%,
+    rgb(8, 30, 11) 100%
   );
   --offColor: #618b35;
 }

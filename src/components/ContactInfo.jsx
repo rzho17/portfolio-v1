@@ -28,7 +28,7 @@ export default function ContactInfo() {
           Socials
         </li>
         <li>
-          <a href="">
+          <a href="../public/assets/RichardHo_resume.pdf">
             <BsFileEarmarkPersonFill className={styles.infoIcon} />
           </a>
           Resume

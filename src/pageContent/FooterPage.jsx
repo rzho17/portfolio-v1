@@ -13,10 +13,10 @@ export default function FooterPage() {
           <div>
             <h2>Want to Connect?</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-              fugit architecto quo tempora eius, quia quibusdam vel aut sit
-              doloremque quas rerum sapiente minus aliquam exercitationem,
-              maxime quisquam culpa reiciendis.
+              Thanks for stopping by! Got a cool project? Need a creative brain
+              on your team? Or maybe you just accidentally ended up here and now
+              feel weirdly compelled to hire me? Either way let’s chat! Shoot me
+              a message or stalk me professionally on LinkedIn.
             </p>
             <ContactInfo />
           </div>

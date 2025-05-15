@@ -53,6 +53,7 @@
   color: var(--primaryColor);
   margin: 2rem 0;
 }
+
 .infoAbout h3,
 .infoSkills h3 {
   /* font-size: clamp(1rem, 1.5vw, 2vw); */
@@ -80,7 +81,7 @@
 
 .infoAbout p {
   font-weight: 100;
-  line-height: 1.1rem;
+  line-height: 1.5rem;
   /* font-size: clamp(0.75rem, 1.5vw, 2rem); */
   font-size: 1rem;
   opacity: 0.8;

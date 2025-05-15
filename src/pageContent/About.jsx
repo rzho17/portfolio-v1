@@ -20,10 +20,13 @@ export default function About() {
             <div>
               <h2>Here's some info about me</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-                fugit architecto quo tempora eius, quia quibusdam vel aut sit
-                doloremque quas rerum sapiente minus aliquam exercitationem,
-                maxime quisquam culpa reiciendis.
+                Hey! I’m Richard, I enjoy learning new things and building cool
+                stuff. I’m always looking for ways to grow and challenge myself.
+                Whether it’s working on web projects, diving into new skills, or
+                just figuring things out one step at a time, I’m all about
+                improving and having fun along the way. When I’m not working,
+                you’ll probably find me making some new food, exploring
+                supermarkets, or blundering in chess.
               </p>
 
               <ContactInfo />
