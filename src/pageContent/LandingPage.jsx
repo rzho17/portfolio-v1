@@ -7,26 +7,19 @@ export default function LandingPage() {
   const [text] = useTypewriter({
     words: ["Developer", "Designer"],
     loop: 0,
+    typeSpeed: 120,
+    deleteSpeed: 120,
   });
   return (
     <>
       <section className={styles.landingPage} id="home">
         <header className={styles.landingBlur}>
           <DarkMode />
-          {/* <img
-            src="../public/assets/darkBackground.jpg"
-            alt=""
-            className={styles.background}
-          />
-          <img
-            src="../public/assets/foreground.png"
-            alt=""
-            className={styles.foreground}
-          /> */}
+
           <div className={styles.titleContainer}>
             <p className={styles.descriptor}>FRONT END</p>
             <div className={styles.headingContainer}>
-              <p>Reggie Z</p>
+              <p>Richard Ho</p>
               <h1>
                 Web
                 <span> {text}</span>
