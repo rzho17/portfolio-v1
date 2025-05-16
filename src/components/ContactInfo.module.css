@@ -30,8 +30,6 @@
   margin-bottom: 0.25rem;
 }
 
-@media screen and (min-width: 768px) {
-  .contactForm {
-    margin-right: 0;
-  }
+.infoLinks a:hover {
+  opacity: 0.3;
 }

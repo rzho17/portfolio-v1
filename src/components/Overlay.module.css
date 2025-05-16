@@ -35,7 +35,7 @@
 }
 
 .close svg {
-  color: var(--primaryColor);
+  color: white;
   width: 1.25rem;
   height: 100%;
 }
@@ -80,4 +80,5 @@
 
 .btn:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
