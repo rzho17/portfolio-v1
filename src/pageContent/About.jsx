@@ -80,7 +80,7 @@ export default function About() {
           </div>
         </div>
 
-        <img src="../public/assets/lightBackground.jpg" alt="" />
+        <img alt="" />
       </div>
     </section>
   );

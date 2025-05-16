@@ -49,7 +49,9 @@ export default function FooterPage() {
           <input type="submit" value="Connect" />
         </form> */}
       </section>
-      <div className={styles.footerBar}>Designed by</div>
+      <div className={styles.footerBar}>
+        Designed and developed by Richard Ho
+      </div>
     </footer>
   );
 }

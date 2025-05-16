@@ -14,6 +14,7 @@
     rgb(8, 30, 11) 100%
   );
   --offColor: #618b35;
+  --aboutImg: url("../public/assets/light-about.png");
 }
 
 [data-theme="dark"] {
@@ -36,6 +37,7 @@
     rgba(34, 38, 38, 1) 100%
   );
   --offColor: #317c8f;
+  --aboutImg: url("../public/assets/dark-about.png");
 }
 
 * {

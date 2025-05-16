@@ -10,6 +10,7 @@ export default function LandingPage() {
     typeSpeed: 120,
     deleteSpeed: 120,
   });
+
   return (
     <>
       <section className={styles.landingPage} id="home">
