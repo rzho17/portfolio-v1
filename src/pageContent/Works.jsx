@@ -60,12 +60,7 @@ export default function Works() {
             onMouseEnter={() => changeOverlay(setActiveP1)}
             onMouseLeave={() => changeOverlay(setActiveP1)}
           >
-            <video
-              src="../public/assets/portv1.mp4"
-              autoPlay
-              muted
-              loop
-            ></video>
+            <video src="../assets/portv1.mp4" autoPlay muted loop></video>
             {activeP1 ? (
               <Overlay
                 title={info[0].title}
@@ -82,7 +77,7 @@ export default function Works() {
             onMouseEnter={() => changeOverlay(setActiveP2)}
             onMouseLeave={() => changeOverlay(setActiveP2)}
           >
-            <video src="../public/assets/pomo.mp4" autoPlay muted loop></video>
+            <video src="../assets/pomo.mp4" autoPlay muted loop></video>
 
             {activeP2 ? (
               <Overlay
@@ -102,12 +97,7 @@ export default function Works() {
             onMouseEnter={() => changeOverlay(setActiveP3)}
             onMouseLeave={() => changeOverlay(setActiveP3)}
           >
-            <video
-              src="../public/assets/battle.mp4"
-              autoPlay
-              muted
-              loop
-            ></video>
+            <video src="../assets/battle.mp4" autoPlay muted loop></video>
             {activeP3 ? (
               <Overlay
                 title={info[2].title}
@@ -124,12 +114,7 @@ export default function Works() {
             onMouseEnter={() => changeOverlay(setActiveP4)}
             onMouseLeave={() => changeOverlay(setActiveP4)}
           >
-            <video
-              src="../public/assets/twelfth.mp4"
-              autoPlay
-              muted
-              loop
-            ></video>
+            <video src="../assets/twelfth.mp4" autoPlay muted loop></video>
             {activeP4 ? (
               <Overlay
                 title={info[3].title}
