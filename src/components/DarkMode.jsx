@@ -1,6 +1,7 @@
 import styles from "./DarkMode.module.css";
 
 export default function DarkMode() {
+  // sets the dark mode by setting the active data theme
   const setDark = () => {
     document.querySelector("body").setAttribute("data-theme", "dark");
     localStorage.setItem("selectedTheme", "dark");

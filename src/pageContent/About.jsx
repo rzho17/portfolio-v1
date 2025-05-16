@@ -30,18 +30,6 @@ export default function About() {
               </p>
 
               <ContactInfo />
-              {/* <div className={styles.infoLinks}>
-                <a href="https://github.com/rzho17">
-                  <IoLogoGithub className={styles.infoIcon} />
-                </a>
-                <a href="https://www.linkedin.com/in/richard-h-089b6a230/">
-                  <FaLinkedin className={styles.infoIcon} />
-                </a>
-                <a href="">
-                  <FaInstagram className={styles.infoIcon} />
-                </a>
-                <a href="">resume</a>
-              </div> */}
             </div>
           </div>
           <div className={styles.infoSkills}>

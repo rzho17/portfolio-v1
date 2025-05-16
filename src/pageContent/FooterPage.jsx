@@ -22,32 +22,6 @@ export default function FooterPage() {
           </div>
         </div>
         <ContactMe />
-        {/* <form action="" className={`${styles.contactForm} `}>
-          <label htmlFor="name"></label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            className={styles.contactName}
-            placeholder="Your Name"
-          />
-          <label htmlFor="email"></label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            className={styles.contactEmail}
-          />
-          <label htmlFor="message"></label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Say Hi Here!"
-            className={styles.contactMessage}
-          ></textarea>
-          <input type="submit" value="Connect" />
-        </form> */}
       </section>
       <div className={styles.footerBar}>
         Designed and developed by Richard Ho

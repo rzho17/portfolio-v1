@@ -40,31 +40,6 @@
   color: var(--offColor);
 }
 
-/* .contactForm {
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.contactName,
-.contactEmail,
-.contactMessage {
-  border: 1px solid var(--primaryColor);
-  color: var(--primaryColor);
-  border-radius: 5px;
-  padding: 1rem 0 1.5rem 0.5rem;
-  background-color: transparent;
-}
-
-.contactForm input[type="submit"] {
-  align-self: flex-start;
-  padding: 0.5rem 1rem;
-  color: var(--secondaryColor);
-  background-color: var(--primaryColor);
-  border-radius: 10px;
-  margin-top: 1rem;
-} */
-
 .footerBar {
   display: flex;
   justify-content: center;

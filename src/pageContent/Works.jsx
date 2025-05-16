@@ -83,7 +83,6 @@ export default function Works() {
             onMouseLeave={() => changeOverlay(setActiveP2)}
           >
             <video src="../public/assets/pomo.mp4" autoPlay muted loop></video>
-            {/* <Overlay /> */}
 
             {activeP2 ? (
               <Overlay

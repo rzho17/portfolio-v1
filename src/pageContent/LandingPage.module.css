@@ -1,14 +1,12 @@
 /* wrapper */
 .landingPage {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
+
   flex-direction: column;
   /* provides auto centering for title page */
   padding: clamp(1.5rem, 3vw, 4rem);
   background-color: rgb(207, 212, 212);
 
-  /* background-image: url("../public/assets/darkBackground.jpg"); */
   background-image: var(--landingBg);
 
   height: 100vh;
@@ -28,7 +26,6 @@
   justify-content: center;
   align-items: center;
 
-  /* border: 1px solid; */
   border-radius: 20px;
 
   backdrop-filter: blur(3px);
@@ -55,10 +52,6 @@
   font-size: 1.2rem;
   font-weight: 100;
 }
-/* .titleContainer div {
-  display: flex;
-  flex-direction: column;
-} */
 
 .descriptor {
   color: var(--descriptor);
@@ -69,12 +62,8 @@
 }
 
 h1 {
-  /* font-size: 3rem; */
   font-size: clamp(2.5rem, 4rem, 3vw);
   color: #fffdf6;
-
-  /* min-width: 280px; */
-  /* min-width: 400px; */
 }
 
 h1 .cursor {
@@ -92,10 +81,7 @@ h1 span:nth-of-type(1) {
 }
 
 .headingButtons button {
-  /* font-size: 0.1rem; */
-
   font-size: clamp(0.6rem, 1vw, 2vw);
-  /* font-size: 0.8rem; */
 
   color: #fffdf6;
   border: 1px solid #fffdf6;
@@ -108,11 +94,7 @@ h1 span:nth-of-type(1) {
 .headingButtons a:nth-of-type(3) button {
   padding: clamp(0.25rem, 1vw, 0.5rem) clamp(0.6rem, 2vw, 1rem);
   background: var(--projectHighlight);
-  /* background: linear-gradient(
-    270deg,
-    rgba(15, 55, 20, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  ); */
+
   border: 1px solid #222626;
 }
 
